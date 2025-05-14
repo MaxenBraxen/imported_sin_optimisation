@@ -82,8 +82,6 @@ print (genomsnittligt_fel_random())
 
 
 
-
-
 def felprocent():
     fel_procent = 0
     for x in range(1, 361):
