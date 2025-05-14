@@ -66,9 +66,9 @@ print (genomsnittligt_fel_random())
 #Det är bättre att kolla på genomsnittlig avvikelse, och den var där 0.08 för 3:gradaren
 #och här utan låsta nollställen 0.058. Alltså bättre. Sen märkte jag också när jag anpassade med den här modellen att den inte tar så jättemycket hänsyn till
 #vad som händer i slutet av intervallet, vid 0 och 360 grader. Skillnaden blev 0.2 där för tredjegradaren. Det gör att jag inte kan anpassa
-#polynomfunktioner av jättehög grad här. 5 är egentligen det som funkar bäst. Där får jag en genomsnittlig avvikelse på endast 0.004 alltså bara 4 % av felet hos 3:gradare med låsta punkter.
-#3,4 och 6 funkar också bra här. Anledningen till att jag inte kan anpassa polynom av högra grad (tror jag) inte är på grund av
-#att det inte går utan snarare att programmet tar hänsyn till olika saker som påverkar hur funktionen ser ut.
+#polynomfunktioner av jättehög grad här. Om jag gör det så blir den dålig även inom intervallet. 5 är egentligen det som funkar bäst. Där får jag en genomsnittlig avvikelse på endast 0.004 alltså bara 4 % av felet hos 3:gradare med låsta punkter.
+#Anledningen till att det inte går att anpassa funktioner av högre grad tror jag inte är att det inte går, utan snarare att funktionen är anpassad till vissa saker som gör att den tar hänsyn
+#till saker som gör att den inte anpassas bra i intervallet.
 
 
 #En slutgiltig sak som jag har tänkt på är hur man ska bestämma fel. Ska man välja själv ett antal punkter med ekvivalent avstånd
